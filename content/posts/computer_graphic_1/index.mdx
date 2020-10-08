@@ -15,12 +15,31 @@ github repo: <a href="https://github.com/rolandshc/shadedChopper">shadedChopper 
 
 ### Shaded Chopper
 
-The product:
+ <br/>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qavs0x_usBU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+Description:
+
+It is a course practice. In the video, the scene has been rendered with walls and a flying chopper with blades rotating.
+
+I have made use of the C++ OpenGL Mathematics (glm) to create those objects as array buffers.
+
+And their position information will pass from CPU to GPU to let the GPU calculate camera space vertices, fragments and colors.
+
+We use the OpenGL Shading Language (GLSL) for the vertex shader and fragment shader to calculate the resulting colors.
+
+As you see, a lightsource is rotating around the scene.
+
+I have implemented the Phong reflection model so the GPU will run and calculate the color changes simultaneously when running the program.
+
+The lighting model takes care of the Ambient, Diffuse, and Specular Lighting.
+
+If you want to know more about the light and shadow, please check the links below =)
 
 Recommended reading:
+
+ <a href="https://learnopengl.com/Lighting/Basic-Lighting">Learn opengl - Basic Lighting</a> <br/>
 
  <a href="https://en.wikipedia.org/wiki/Phong_reflection_model">Phong reflection model</a>
 
