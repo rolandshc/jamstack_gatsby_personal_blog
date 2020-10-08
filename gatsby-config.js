@@ -38,10 +38,6 @@ module.exports = {
             title: `Photography`,
             slug: `/photography`,
           },
-          {
-            title: `Travel Map`,
-            slug: `/travelmap`,
-          },
         ],
         externalLinks: [
         ],
