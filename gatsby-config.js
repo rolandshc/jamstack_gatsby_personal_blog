@@ -76,5 +76,11 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
+    {
+   resolve: `gatsby-transformer-remark`,
+   options: {
+     plugins: [`gatsby-remark-responsive-iframe`],
+   },
+ },
   ],
 }
