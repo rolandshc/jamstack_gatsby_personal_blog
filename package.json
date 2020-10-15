@@ -25,6 +25,7 @@
     "gatsby-plugin-offline": "^2.2.4",
     "gatsby-plugin-sitemap": "^2.2.19",
     "gatsby-remark-embed-video": "^3.0.10",
+    "gatsby-remark-interactive-gifs": "^1.0.4",
     "gatsby-transformer-remark": "^2.8.38",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
