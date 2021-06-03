@@ -1,80 +1,80 @@
-require(`dotenv`).config({
-  path: `.env`,
-})
-
 module.exports = {
   siteMetadata: {
-    siteTitle: `Roland`,
-    // Default title of the page
-    siteTitleAlt: `Roland Personal Site`,
-    // Can be used for e.g. JSONLD
-    siteHeadline: `Roland personal site`,
-    // Will be used to generate absolute URLs for og:image etc.
-    siteUrl: `https://durandalsowner.github.io/`,
-    // Used for SEO
-    siteDescription: `A personal site about myself, lovely people, and the world.`,
-    // Will be set on the <html /> tag
-    siteLanguage: `en`,
-    // Used for og:image and must be placed inside the `static` folder
-    siteImage: `/banner.jpg`,
-    // Twitter Handle
-    author: `Roland S`,
+    title: `Roland Shum`,
+    subtitle: `developer - web x ai x game`,
+    description: `A peresonal blog built with React.`,
+    author: `@rolandshc`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
-      resolve: `@lekoarts/gatsby-theme-minimal-blog`,
-      // See the theme's README for all available options
+      resolve: `gatsby-source-filesystem`,
       options: {
-        navigation: [
-          {
-            title: `Blog`,
-            slug: `/blog`,
-          },
-          {
-            title: `About`,
-            slug: `/about`,
-          },
-          {
-            title: `Photography`,
-            slug: `/photography`,
-          },
-        ],
-        externalLinks: [
-        ],
+        name: `markdown-pages`,
+        path: `${__dirname}/src/content`,
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-sitemap`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+          resolve: `gatsby-remark-embed-youtube`,
+          options: {
+          width: 800,
+          height: 400}
+          },
+        `gatsby-remark-responsive-iframe`,
+        `gatsby-remark-reading-time`, {
+          resolve: `gatsby-remark-prismjs`,
+          options: {
+            aliases:{sh: "bash", js:"javascript"},
+            showLineNumbers: true,
+          }
+        }
+      ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          "/*": [
+            "Strict-Transport-Security: max-age=63072000"
+          ]
+        }, // option to add more headers. `Link` headers are transformed by the below criteria
+        allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
+        mergeSecurityHeaders: true, // boolean to turn off the default security headers
+        mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
+        mergeCachingHeaders: true, // boolean to turn off the default caching headers
+        transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
+        generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Roland blog`,
-        short_name: `personal blog`,
-        description: ``,
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
         start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#6B46C1`,
-        display: `standalone`,
-        icons: [
-          {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-        ],
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-netlify`,
-   ]
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // 'gatsby-plugin-offline',
+  ],
 }
