@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Roland Shum`,
-    subtitle: `developer - web x ai x game`,
-    description: `A peresonal blog built with React.`,
+    subtitle: `developer - AR x ML x Gaming`,
+    description: `A peresonal blog built with GatsbyJS.`,
     author: `@rolandshc`,
   },
   plugins: [

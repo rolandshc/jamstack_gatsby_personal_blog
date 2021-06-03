@@ -43,6 +43,8 @@ const LandingBio = () => (
         <Container>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
           <Description>{data.site.siteMetadata.subtitle}</Description>
+          <Description>"What is the use of living, if it be not to strive for noble causes and to make this muddled world a better place for those who will live in it after we are gone?"
+<br/>Winston Churchill</Description>
         </Container>
       </OuterContainer>
     )}
