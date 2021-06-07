@@ -9,10 +9,9 @@ path: "/blog/self-introduction"
 
 Talking about self-intro is always like an advertisement. I do not like it personally. Since you are now visiting this post, you should be interested in me or something I can offer = )
 
-I am a game enthusiast. I was addicted to anime and RPG games when I was small. Pokemon is my favourite. I completed all the MSG series and watched all the movies.
-When I was small, I would like to study the different stats behind different pokemon species.
+I am a game enthusiast. I love anime and RPG games. My favourite is Pokemon. I completed all the main stream games (MSG) and watched all the movies. When I was small, I would like to study the different stats behind different pokemon species. Like most of the trainers, I like to use strong monsters and evolve them into their final forms.
 
-When I was in high school, I understood that the numerical system of this collection game is so realistic and I always wish to be a Mewtwo but not a Pikachu LOL. The base stats values and individual values of a pokemon could not be changed with effort but only the effort values could be changed by effort. This means that a Pikachu could never become a Mewtwo but at least a Pikachu could become a stronger Pikachu.
+During my high school years, I started to realize that the numerical system of this collection game is so realistic. I always wish to be a Mewtwo but not a Pikachu LOL. The fact is that the base stats values and individual values of a pokemon could not be changed by training but only the effort values could be changed. This means that a Pikachu could never become a Mewtwo but at least a Pikachu could become a stronger Pikachu.
 
 
 <div style="padding-top:56.313%;position:relative;"><iframe src="https://gifer.com/embed/OiLM" width="100%" height="100%" style='position:absolute;top:0;left:0;' frameBorder="0" allowFullScreen></iframe></div><p><a href="https://gifer.com">via GIFER</a></p>
