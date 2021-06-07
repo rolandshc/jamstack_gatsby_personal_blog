@@ -34,6 +34,12 @@ module.exports = {
           width: 800,
           height: 400}
           },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
         `gatsby-remark-responsive-iframe`,
         `gatsby-remark-reading-time`, {
           resolve: `gatsby-remark-prismjs`,

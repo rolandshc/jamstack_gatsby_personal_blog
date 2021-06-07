@@ -3,6 +3,7 @@ title: "Futuclass AR"
 date: "2021-06-03"
 draft: false
 path: "/blog/Futuclass-AR"
+
 ---
 
 ## A Mobile AR Educational Game

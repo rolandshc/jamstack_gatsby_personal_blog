@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
-
 const Container = styled.div`
   text-align: center;
 `
@@ -43,8 +42,7 @@ const LandingBio = () => (
         <Container>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
           <Description>{data.site.siteMetadata.subtitle}</Description>
-          <Description>"What is the use of living, if it be not to strive for noble causes and to make this muddled world a better place for those who will live in it after we are gone?"
-<br/>Winston Churchill</Description>
+          <Description>"What is the use of living, if it be not to strive for noble causes and to make this muddled world a better place for those who will live in it after we are gone?" Winston Churchill</Description>
         </Container>
       </OuterContainer>
     )}
