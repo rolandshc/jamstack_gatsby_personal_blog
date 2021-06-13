@@ -103,6 +103,7 @@ const Header = ({ siteTitle }) => (
     <Content>
       <p>
         <HomeLink to="/">{siteTitle}</HomeLink>
+        <NavLink to="/playground">Playground</NavLink>
         <NavLink to="/blog">Blog</NavLink>
         <GitHubLink href="https://github.com/rolandshc">
           GitHub
